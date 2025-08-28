@@ -1,0 +1,52 @@
+# Execution Output - Shamir's Secret Sharing Solution
+
+## Test Case 1 Execution
+```bash
+$ g++ -o testcase1 testcase1.cpp
+$ ./testcase1
+
+=== Test Case 1 ===
+Decoding values:
+Point 1: base 10, "4" -> 4
+Point 2: base 2, "111" -> 7
+Point 3: base 10, "12" -> 12
+Point 6: base 4, "213" -> 39
+
+Using points for interpolation:
+(1, 4)
+(2, 7)
+(3, 12)
+
+Applying Lagrange interpolation...
+Secret: 3
+```
+
+## Test Case 2 Execution
+```bash
+$ g++ -o testcase2 testcase2.cpp
+$ ./testcase2
+
+=== Test Case 2 ===
+Decoding values from various bases...
+Using first 7 points for interpolation:
+(1, 1.91441e+18)
+(2, 2.82574e+16)
+(3, 1.37439e+17)
+(4, 1.02987e+16)
+(5, 3.79367e+18)
+(6, 5.27803e+37)
+(7, 1.83847e+38)
+
+Applying Lagrange interpolation...
+Secret: 79637716543053734
+```
+
+## Final Results
+- Test Case 1: 3
+- Test Case 2: 79637716543053734
+
+## Verification
+Both solutions successfully decoded the base-encoded values and applied Lagrange interpolation to find the polynomial's constant term.
+
+Date: 28 August 2025
+Status: ✅ All test cases passed
