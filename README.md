@@ -12,8 +12,11 @@ Find the constant term of a polynomial using Shamir's Secret Sharing algorithm f
 
 ## Usage
 ```bash
-g++ -o solution solution.cpp
-./solution
+g++ -o testcase1 testcase1.cpp
+./testcase1
+
+g++ -o testcase2 testcase2.cpp
+./testcase2
 ```
 
 ## Results
@@ -22,9 +25,16 @@ g++ -o solution solution.cpp
 
 ## Implementation
 - Language: C++
+- Separate files for each test case
 - No external dependencies
 - Handles large numbers with `long long`
 - Time complexity: O(k²)
+
+## Files
+- `testcase1.cpp` - Solution for first test case
+- `testcase2.cpp` - Solution for second test case
+- `testcase1.json` - Input data for test case 1
+- `testcase2.json` - Input data for test case 2
 
 ---
 
