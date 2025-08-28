@@ -10,6 +10,10 @@ Find the constant term of a polynomial using Shamir's Secret Sharing algorithm f
 - **Lagrange Interpolation**: Reconstruct polynomial and find f(0)
 - Uses exactly k points to solve for the secret constant
 
+## Core Algorithm: Lagrange Interpolation
+
+f(0) = Σ(yi × Li(0)) where Li(0) = Π((0-xj)/(xi-xj))
+
 ## Usage
 ```bash
 g++ -o testcase1 testcase1.cpp
